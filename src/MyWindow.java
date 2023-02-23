@@ -8,7 +8,7 @@ class MyWindow extends JFrame implements MouseWheelListener {
     ArrayList<MyCircle> circles = new ArrayList<>();
     Random rand = new Random();
     private MyPaintingArea area;
-    int wheelClicks = 0;
+    private int wheelClicks = 0;
     private int circleSize = 50; // default circle size
 
     public MyWindow() {
