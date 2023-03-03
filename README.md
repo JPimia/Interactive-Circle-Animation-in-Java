@@ -16,3 +16,4 @@ Once the application is running, you can click anywhere in the window to add cir
 -   Adjust the size of the circles using the mouse wheel
 -   Circles move randomly around the window, bouncing off the edges
 -   Smooth animation thanks to double-buffering
+-   Checks so that circles doesn't go out of bounds
