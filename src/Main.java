@@ -10,9 +10,8 @@ class Main {
                 System.out.println("thread started");
                 MyWindow window = new MyWindow();
                 MyPaintingArea area = window.getPaintingArea();
-                ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
+                ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
                 executor.scheduleAtFixedRate(() -> {
-                    // change direction of circles
                     area.changeCircleDirection();
                     area.repaint();
                 }, 0, 10, TimeUnit.MILLISECONDS);
